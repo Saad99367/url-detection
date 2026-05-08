@@ -1,7 +1,7 @@
 import sys
 from src.utils.logger import logging 
 
-class NetworkSecurityException(Exception):
+class UrlException(Exception):
     def __init__(self,error_message,error_details:sys):
         self.error_message = error_message
         _,_,exc_tb = error_details.exc_info()
