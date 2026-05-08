@@ -1,0 +1,26 @@
+[ 2026-05-08 18:09:29,422 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:09:29,512 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:09:29,513 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:09:29,605 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:09:29,605 ] 33 root - INFO - Model and TF-IDF loaded successfully
+[ 2026-05-08 18:09:29,606 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:09:29,607 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:09:29,750 ] 87 root - INFO - Prediction completed: Legitimate
+[ 2026-05-08 18:09:29,751 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:09:29,751 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:09:29,859 ] 87 root - INFO - Prediction completed: Legitimate
+[ 2026-05-08 18:09:29,859 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:09:29,860 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:09:29,974 ] 87 root - INFO - Prediction completed: Legitimate
+[ 2026-05-08 18:09:29,975 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:09:29,975 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:09:30,080 ] 87 root - INFO - Prediction completed: Phishing
+[ 2026-05-08 18:09:30,080 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:09:30,081 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:09:30,181 ] 87 root - INFO - Prediction completed: Phishing
+[ 2026-05-08 18:09:30,181 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:09:30,182 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:09:30,285 ] 87 root - INFO - Prediction completed: Phishing
+[ 2026-05-08 18:09:30,286 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:09:30,287 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:09:30,406 ] 87 root - INFO - Prediction completed: Legitimate

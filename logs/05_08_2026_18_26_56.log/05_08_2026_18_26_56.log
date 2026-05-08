@@ -1,0 +1,22 @@
+[ 2026-05-08 18:26:56,876 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:26:56,965 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:26:56,965 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:26:57,046 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:26:57,046 ] 36 root - INFO - Model and TF-IDF loaded successfully
+[ 2026-05-08 18:26:57,231 ] 1025 httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+[ 2026-05-08 18:26:57,254 ] 1025 httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+[ 2026-05-08 18:26:57,426 ] 1025 httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+[ 2026-05-08 18:26:57,508 ] 1025 httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+[ 2026-05-08 18:26:57,884 ] 1025 httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+[ 2026-05-08 18:27:12,358 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:27:12,358 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:27:12,492 ] 93 root - INFO - Prediction completed: \u26a0\ufe0f Phishing
+[ 2026-05-08 18:27:53,894 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:27:53,895 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:27:54,029 ] 93 root - INFO - Prediction completed: \u2705 Legitimate
+[ 2026-05-08 18:28:03,904 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:28:03,904 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:28:04,038 ] 93 root - INFO - Prediction completed: \u2705 Legitimate
+[ 2026-05-08 18:28:14,896 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:28:14,897 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:28:15,024 ] 93 root - INFO - Prediction completed: \u26a0\ufe0f Phishing

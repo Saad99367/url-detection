@@ -1,0 +1,6 @@
+[ 2026-05-08 18:26:15,515 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:26:15,627 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:26:15,627 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:26:15,714 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:26:15,714 ] 36 root - INFO - Model and TF-IDF loaded successfully
+[ 2026-05-08 18:26:16,684 ] 1025 httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"

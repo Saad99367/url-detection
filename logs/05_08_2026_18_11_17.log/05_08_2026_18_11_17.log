@@ -1,0 +1,31 @@
+[ 2026-05-08 18:11:17,475 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:11:17,562 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:11:17,562 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:11:17,642 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:11:17,642 ] 33 root - INFO - Model and TF-IDF loaded successfully
+[ 2026-05-08 18:11:17,817 ] 1025 httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+[ 2026-05-08 18:11:17,830 ] 1025 httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+[ 2026-05-08 18:11:17,942 ] 1025 httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+[ 2026-05-08 18:11:18,484 ] 1025 httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+[ 2026-05-08 18:11:18,643 ] 1025 httpx - INFO - HTTP Request: GET https://api.gradio.app/v2/tunnel-request "HTTP/1.1 200 OK"
+[ 2026-05-08 18:11:45,944 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:11:45,945 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:11:46,149 ] 87 root - INFO - Prediction completed: Phishing
+[ 2026-05-08 18:12:35,411 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:12:35,412 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:12:35,602 ] 87 root - INFO - Prediction completed: Phishing
+[ 2026-05-08 18:12:41,674 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:12:41,674 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:12:41,844 ] 87 root - INFO - Prediction completed: Legitimate
+[ 2026-05-08 18:12:48,175 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:12:48,175 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:12:48,342 ] 87 root - INFO - Prediction completed: Phishing
+[ 2026-05-08 18:12:56,445 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:12:56,446 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:12:56,619 ] 87 root - INFO - Prediction completed: Phishing
+[ 2026-05-08 18:13:03,524 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:13:03,524 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:13:03,699 ] 87 root - INFO - Prediction completed: Phishing
+[ 2026-05-08 18:13:53,934 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:13:53,934 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 18:13:54,114 ] 87 root - INFO - Prediction completed: Phishing

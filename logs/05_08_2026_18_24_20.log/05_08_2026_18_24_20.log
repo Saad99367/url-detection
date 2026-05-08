@@ -1,0 +1,26 @@
+[ 2026-05-08 18:24:20,830 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:24:20,921 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:24:20,921 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:24:21,007 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:24:21,008 ] 36 root - INFO - Model and TF-IDF loaded successfully
+[ 2026-05-08 18:24:21,008 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:24:21,009 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:24:21,145 ] 93 root - INFO - Prediction completed: \u2705 Legitimate
+[ 2026-05-08 18:24:21,147 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:24:21,148 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:24:21,277 ] 93 root - INFO - Prediction completed: \u2705 Legitimate
+[ 2026-05-08 18:24:21,278 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:24:21,279 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:24:21,407 ] 93 root - INFO - Prediction completed: \u2705 Legitimate
+[ 2026-05-08 18:24:21,408 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:24:21,409 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:24:21,531 ] 93 root - INFO - Prediction completed: \u26a0\ufe0f Phishing
+[ 2026-05-08 18:24:21,532 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:24:21,533 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:24:21,640 ] 93 root - INFO - Prediction completed: \u26a0\ufe0f Phishing
+[ 2026-05-08 18:24:21,641 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:24:21,642 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:24:21,747 ] 93 root - INFO - Prediction completed: \u26a0\ufe0f Phishing
+[ 2026-05-08 18:24:21,748 ] 48 root - INFO - Prediction pipeline started
+[ 2026-05-08 18:24:21,749 ] 57 root - INFO - URL transformed successfully
+[ 2026-05-08 18:24:21,858 ] 93 root - INFO - Prediction completed: \u2705 Legitimate

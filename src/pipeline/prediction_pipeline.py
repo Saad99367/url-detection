@@ -18,21 +18,28 @@ class PredictionPipeline:
 
     def __init__(self):
 
-        self.model_path = MODEL_FILE_PATH
-        self.tfidf_path = TFIDF_FILE_PATH
+        try:
 
-        # Load model and TF-IDF once
-        self.model = load_object(
-            self.model_path
-        )
+            self.model_path = MODEL_FILE_PATH
+            self.tfidf_path = TFIDF_FILE_PATH
 
-        self.tfidf = load_object(
-            self.tfidf_path
-        )
+            # Load model
+            self.model = load_object(
+                self.model_path
+            )
 
-        logging.info(
-            "Model and TF-IDF loaded successfully"
-        )
+            # Load TF-IDF
+            self.tfidf = load_object(
+                self.tfidf_path
+            )
+
+            logging.info(
+                "Model and TF-IDF loaded successfully"
+            )
+
+        except Exception as e:
+
+            raise UrlException(e, sys)
 
     def predict(self, url: str):
 
@@ -56,41 +63,54 @@ class PredictionPipeline:
                 transformed_url
             )[0]
 
-            # Prediction probabilities
-            probability = self.model.predict_proba(
-                transformed_url
-            )[0]
+            # Default probabilities
+            legit_prob = 0
+            phishing_prob = 0
 
-            # Confidence score
-            confidence = round(
-                max(probability) * 100,
-                2
-            )
+            # Check if model supports probabilities
+            if hasattr(self.model, "predict_proba"):
 
-            # Debugging
-            print("\n")
-            print("=" * 50)
-            print(f"URL: {url}")
-            print(f"Raw Prediction: {prediction}")
-            print(f"Probabilities: {probability}")
-            print("=" * 50)
+                probabilities = self.model.predict_proba(
+                    transformed_url
+                )[0]
 
-            # Correct label mapping
-            # 0 -> Legitimate
-            # 1 -> Phishing
+                legit_prob = round(
+                    probabilities[0] * 100,
+                    2
+                )
 
+                phishing_prob = round(
+                    probabilities[1] * 100,
+                    2
+                )
+
+            # Convert prediction to label
             if prediction == 0:
-                label = "Legitimate"
+                label = "✅ Legitimate"
             else:
-                label = "Phishing"
+                label = "⚠️ Phishing"
 
             logging.info(
                 f"Prediction completed: {label}"
             )
 
+            # Debugging
+            print("\n" + "=" * 50)
+            print(f"URL: {url}")
+            print(f"Prediction: {label}")
+            print(f"Legitimate Probability: {legit_prob}%")
+            print(f"Phishing Probability: {phishing_prob}%")
+            print("=" * 50)
+
             return {
+
                 "Prediction": label,
-                "Confidence": f"{confidence:.2f}%"
+
+                "Legitimate Probability":
+                    f"{legit_prob}%",
+
+                "Phishing Probability":
+                    f"{phishing_prob}%"
             }
 
         except Exception as e:
@@ -107,12 +127,19 @@ if __name__ == "__main__":
     pipeline = PredictionPipeline()
 
     urls = [
+
         "https://www.microsoft.com",
+
         "https://www.google.com",
+
         "https://github.com",
+
         "http://paypal-login-security-update.com",
+
         "http://verify-account-freegift.xyz",
+
         "http://192.168.1.1/login",
+
         "https://secure-bank-login-update.xyz"
     ]
 
@@ -125,8 +152,21 @@ if __name__ == "__main__":
         result = pipeline.predict(url)
 
         print(f"\nURL: {url}")
-        print(f"Prediction : {result['Prediction']}")
-        print(f"Confidence : {result['Confidence']}")
+
+        print(
+            f"Prediction : "
+            f"{result['Prediction']}"
+        )
+
+        print(
+            f"Legitimate : "
+            f"{result['Legitimate Probability']}"
+        )
+
+        print(
+            f"Phishing : "
+            f"{result['Phishing Probability']}"
+        )
 
         print("-" * 100)
 

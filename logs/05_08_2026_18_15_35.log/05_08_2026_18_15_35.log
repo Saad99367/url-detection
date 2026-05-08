@@ -1,0 +1,10 @@
+[ 2026-05-08 18:15:36,556 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:15:36,736 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:15:36,736 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 18:15:36,845 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 18:15:36,845 ] 33 root - INFO - Model and TF-IDF loaded successfully
+[ 2026-05-08 18:15:37,098 ] 1025 httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/startup-events "HTTP/1.1 200 OK"
+[ 2026-05-08 18:15:37,118 ] 1025 httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+[ 2026-05-08 18:15:37,143 ] 1025 httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+[ 2026-05-08 18:15:37,364 ] 1025 httpx - INFO - HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+[ 2026-05-08 18:15:37,685 ] 1025 httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
