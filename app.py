@@ -1,55 +1,81 @@
-import gradio as gr
+import streamlit as st
 
 from src.pipeline.prediction_pipeline import PredictionPipeline
 
 
-# Load pipeline
-pipeline = PredictionPipeline()
+# Page Config
+st.set_page_config(
 
+    page_title="URL Phishing Detection",
 
-def predict_url(url):
+    page_icon="🔍",
 
-    result = pipeline.predict(url)
-
-    return {
-
-        "Prediction":
-            result["Prediction"],
-
-        "Legitimate":
-            result["Legitimate Probability"],
-
-        "Phishing":
-            result["Phishing Probability"]
-    }
-
-
-# Gradio Interface
-interface = gr.Interface(
-
-    fn=predict_url,
-
-    inputs=gr.Textbox(
-        lines=2,
-        placeholder="Enter URL here...",
-        label="URL"
-    ),
-
-    outputs=gr.JSON(
-        label="Prediction Result"
-    ),
-
-    title="🔍 URL Phishing Detection",
-
-    description="""
-    Detect phishing websites using Machine Learning + TF-IDF
-    """,
-
-    theme=gr.themes.Soft()
+    layout="centered"
 )
 
 
-# Launch
-if __name__ == "__main__":
+# Load Pipeline
+pipeline = PredictionPipeline()
 
-    interface.launch()
+
+# Title
+st.title("🔍 URL Phishing Detection")
+
+st.markdown(
+    """
+    Detect phishing websites using Machine Learning + TF-IDF
+    """
+)
+
+
+# Input
+url = st.text_input(
+
+    "Enter URL",
+
+    placeholder="https://example.com"
+)
+
+
+# Predict
+if st.button("Predict"):
+
+    if url.strip() == "":
+
+        st.warning(
+            "Please enter a URL"
+        )
+
+    else:
+
+        result = pipeline.predict(url)
+
+        prediction = result["Prediction"]
+
+        legit = result["Legitimate Probability"]
+
+        phishing = result["Phishing Probability"]
+
+
+        # Show Prediction
+        if "Phishing" in prediction:
+
+            st.error(prediction)
+
+        else:
+
+            st.success(prediction)
+
+
+        # Probabilities
+        st.subheader(
+            "Prediction Probabilities"
+        )
+
+        st.write(
+            f"✅ Legitimate : {legit}"
+        )
+
+        st.write(
+            f"⚠️ Phishing : {phishing}"
+        )
