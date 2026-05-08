@@ -1,0 +1,9 @@
+[ 2026-05-08 15:41:59,011 ] 31 root - INFO - Prediction pipeline started
+[ 2026-05-08 15:41:59,012 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 15:41:59,204 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 15:41:59,205 ] 40 root - INFO - Model loaded successfully
+[ 2026-05-08 15:41:59,205 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 15:41:59,214 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 15:41:59,215 ] 49 root - INFO - TF-IDF loaded successfully
+[ 2026-05-08 15:41:59,216 ] 58 root - INFO - URL transformed successfully
+[ 2026-05-08 15:41:59,351 ] 83 root - INFO - Prediction completed: Phishing

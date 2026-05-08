@@ -5,7 +5,7 @@ import os
 # Project Directories
 # =========================
 
-ARTIFACTS_DIR: str = "artifacts/data"
+ARTIFACTS_DIR: str = "artifacts"
 
 DATA_DIR: str = "data"
 

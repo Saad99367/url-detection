@@ -1,0 +1,8 @@
+[ 2026-05-08 16:51:16,647 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 16:51:16,941 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 16:51:16,941 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 16:51:17,029 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 16:51:17,029 ] 33 root - INFO - Model and TF-IDF loaded successfully
+[ 2026-05-08 16:51:17,029 ] 41 root - INFO - Prediction pipeline started
+[ 2026-05-08 16:51:17,032 ] 50 root - INFO - URL transformed successfully
+[ 2026-05-08 16:51:17,032 ] 98 root - ERROR - Prediction error: X has 377974 features, but RandomForestClassifier is expecting 432324 features as input.

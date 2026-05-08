@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Phishing URL Detection
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>
+            Phishing URL Detection
+        </h1>
+
+        <p class="subtitle">
+            Enter a website URL to check whether it is Safe or Phishing
+        </p>
+
+        <form
+            action="/predict"
+            method="post"
+        >
+
+            <input
+                type="text"
+                name="url"
+                placeholder="Enter URL here..."
+                required
+            >
+
+            <button type="submit">
+                Predict
+            </button>
+
+        </form>
+
+        {% if prediction %}
+
+        <div class="result">
+
+            <h2>
+                Prediction Result
+            </h2>
+
+            <p>
+                <strong>URL:</strong>
+                {{ url }}
+            </p>
+
+            <p>
+                <strong>Prediction:</strong>
+                {{ prediction }}
+            </p>
+
+            <p>
+                <strong>Confidence:</strong>
+                {{ confidence }}
+            </p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+[ 2026-05-08 15:02:03,102 ] 31 root - INFO - Prediction pipeline started
+[ 2026-05-08 15:02:03,103 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 15:02:03,294 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 15:02:03,294 ] 40 root - INFO - Model loaded successfully
+[ 2026-05-08 15:02:03,294 ] 45 root - INFO - Load object method started...
+[ 2026-05-08 15:02:03,303 ] 48 root - INFO - Object loaded successfully
+[ 2026-05-08 15:02:03,303 ] 49 root - INFO - TF-IDF loaded successfully
+[ 2026-05-08 15:02:03,305 ] 58 root - INFO - URL transformed successfully
+[ 2026-05-08 15:02:03,438 ] 83 root - INFO - Prediction completed: Legitimate
